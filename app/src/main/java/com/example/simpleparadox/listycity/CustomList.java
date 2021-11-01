@@ -53,9 +53,9 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void delete(int i){
-        City city = cities.get(i);
-        if (cities.contains(city)) {
-            cities.remove(city);
-        }
+//        City city = cities.get(i);
+//        if (cities.contains(city)) {
+//            cities.remove(city);
+//        }
     }
 }
