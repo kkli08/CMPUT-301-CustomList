@@ -52,12 +52,10 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
-    public void delete(City city){
-        if (cities.contains(city)) {
-            cities.remove(city);
-        }
-//        else{
-//            throw new IllegalArgumentException();
+    public void delete(int i){
+//        City city = cities.get(i);
+//        if (cities.contains(city)) {
+//            cities.remove(city);
 //        }
     }
 }

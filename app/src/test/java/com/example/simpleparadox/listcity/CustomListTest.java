@@ -17,6 +17,8 @@ public class CustomListTest {
     @BeforeEach
     public void creatList(){
         list = new CustomList(null, new ArrayList<City>());
+        list.addCity(new City("Edmonton", "AB"));
+
     }
 
     @Test
@@ -27,9 +29,9 @@ public class CustomListTest {
     }
 
     @Test
-    public void delete(City city){
+    public void delete(){
         int listSize = list.getCount();
-        list.delete(city);
+        list.delete((listSize-1));
         assertEquals(list.getCount(), listSize-1);
     }
 
